@@ -150,6 +150,12 @@
   .quickstats p{ margin:0; }
   .qs-label{ font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--faint); font-weight:600; }
   .qs-value{ margin-top:6px !important; font-size:13.5px; font-weight:600; color:var(--ink); line-height:1.35; }
+  .bless-block{
+    text-align:center;
+    margin-top:36px;
+    padding-top:36px;
+    border-top:1px solid var(--line-2);
+  }
 
   /* ---- details ---- */
   .details-section{ padding:64px 0 0; }
@@ -232,8 +238,6 @@
   .directions-btn:focus-visible{ outline:2px solid var(--gold-2); outline-offset:3px; }
 
   /* ---- rsvp ---- */
-  .rsvp-section{ padding:70px 0 0; text-align:center; }
-  .rsvp-inner{ border-top:1px solid var(--line-2); padding-top:52px; }
   .rsvp-h2{
     margin:0 0 28px;
     font-family:'Bodoni Moda', serif;
@@ -262,9 +266,6 @@
   .shower-btn:hover{ transform:translateY(-2px); box-shadow:0 18px 34px -12px rgba(201,162,39,0.9); }
   .shower-btn:active{ transform:translateY(1px); }
   .shower-note{ margin:18px 0 0; font-size:12.5px; color:var(--faint); min-height:18px; }
-  .rsvp-phone-block{ margin:40px 0 0; font-size:14px; line-height:1.7; color:var(--ink-soft); }
-  .rsvp-phone-block .deadline{ color:var(--faint); font-size:13px; }
-  .rsvp-phone{ margin:12px 0 0; font-size:15px; font-weight:600; color:var(--ink); }
 
   .foot-crest-wrap{ padding-top:60px; text-align:center; }
   .foot-crest-wrap img{ width:190px; max-width:60%; opacity:0.85; mix-blend-mode:multiply; }
@@ -315,6 +316,12 @@
         <p class="qs-label">Venue</p>
         <p class="qs-value">Virar West</p>
       </div>
+    </div>
+    <div class="bless-block">
+      <p class="eyebrow" style="margin:0 0 14px;">With your blessings</p>
+      <h2 class="rsvp-h2">Do join us, and send something sweet their way.</h2>
+      <button type="button" class="shower-btn" id="showerBtn">Shower blessings</button>
+      <p class="shower-note" id="showerNote"></p>
     </div>
   </section>
 
@@ -367,18 +374,6 @@
       Get directions
       <span style="font-size:15px; line-height:1;">&#8599;</span>
     </a>
-  </section>
-
-  <!-- RSVP -->
-  <section class="rsvp-section">
-    <div class="rsvp-inner">
-      <p class="eyebrow" style="margin:0 0 14px;">With your blessings</p>
-      <h2 class="rsvp-h2">Do join us, and send something sweet their way.</h2>
-      <button type="button" class="shower-btn" id="showerBtn">Shower blessings</button>
-      <p class="shower-note" id="showerNote"></p>
-      <p class="rsvp-phone-block">RSVP by phone<br /><span class="deadline">Kindly confirm by <b>[date]</b></span></p>
-      <p class="rsvp-phone"><b>[contact name &amp; number]</b></p>
-    </div>
   </section>
 
   <div class="foot-crest-wrap">
